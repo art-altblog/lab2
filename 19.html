@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анимация с событиями</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .anim-element {
+      width: 150px;
+      height: 150px;
+      background-color: #3498db;
+      border-radius: 20px;
+      transition: transform 0.5s ease, background-color 0.3s ease; /* Плавная анимация */
+      cursor: pointer;
+    }
+
+    /* Состояние при наведении */
+    .anim-element:hover {
+      transform: rotate(180deg) scale(1.5); /* Увеличение и вращение */
+      background-color: #e74c3c; /* Изменение цвета */
+    }
+
+    /* Возврат в исходное состояние по умолчанию */
+    .anim-element.clicked {
+      transform: rotate(0deg) scale(1); /* Возвращение к первоначальному состоянию */
+      background-color: #3498db; /* Возвращение исходного цвета */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="anim-element" id="element"></div>
+
+  <script>
+    const element = document.getElementById('element');
+
+    element.addEventListener('click', function() {
+      // Переключаем класс "clicked", чтобы вернуть элемент в исходное состояние
+      element.classList.toggle('clicked');
+    });
+  </script>
+
+</body>
+</html>
