@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Градиенты</title>
+  <style>
+    .gradient-container {
+      width: 40%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gradient-box {
+      flex: 1;
+      margin: 10px;
+    }
+
+    .circular-gradient {
+      background: radial-gradient(circle, #ff7b00, #ff0000);
+    }
+
+    .elliptical-gradient {
+      background: radial-gradient(ellipse, #00ff00, #0000ff);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gradient-container">
+    <div class="gradient-box circular-gradient">
+      <p style="color: white; text-align: center; padding-top: 50%;">Круглый градиент</p>
+    </div>
+    <div class="gradient-box elliptical-gradient">
+      <p style="color: white; text-align: center; padding-top: 50%;">Эллиптический градиент</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример с чекбоксами</title>
+    <style>
+        .extra-content {
+            display: none;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"]:checked + .extra-content {
+            display: block;
+        }
+
+        label {
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Пример скрытия/отображения контента с чекбоксами</h2>
+
+    <!-- Чекбокс 1 -->
+    <label for="checkbox1">Показать дополнительную информацию 1</label>
+    <input type="checkbox" id="checkbox1">
+    <div class="extra-content">
+        <p>Это дополнительная информация, которая будет отображаться, если чекбокс 1 отмечен.</p>
+    </div>
+
+    <br>
+
+    <!-- Чекбокс 2 -->
+    <label for="checkbox2">Показать дополнительную информацию 2</label>
+    <input type="checkbox" id="checkbox2">
+    <div class="extra-content">
+        <p>Это другая дополнительная информация, которая будет отображаться, если чекбокс 2 отмечен.</p>
+    </div>
+
+</body>
+</html>

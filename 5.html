@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример с :target</title>
+    <style>
+        /* Начальный стиль для всех вкладок */
+        .tab {
+            padding: 10px;
+            margin: 5px;
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Стиль для активной вкладки */
+        .tab:target {
+            background-color: lightblue;
+            color: white;
+        }
+
+        /* Стиль для выделения текущего h2 */
+        h2:target {
+            background: #fc0; /* Цвет фона */
+            padding: 3px;
+        }
+
+        /* Стиль для контента вкладок */
+        .tab-content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Выберите вкладку:</h2>
+
+    <!-- Вкладки с якорными ссылками -->
+    <a href="#h1" class="tab">Нажми на меня 1</a>
+    <a href="#h2" class="tab">Нажми на меня 2</a>
+
+    <!-- Контент для вкладок -->
+    <h2 id="h1">Спасибо что нажал 1</h2>
+    <p>Заголовок должен подсветиться при нажатии на кнопку 1.</p>
+    
+    <h2 id="h2">Спасибо что нажал 2</h2>
+    <p>Заголовок должен подсветиться при нажатии на кнопку 2.</p>
+
+</body>
+</html>

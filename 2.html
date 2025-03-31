@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Активный пункт меню</title>
+    <style>
+        /* Стили для контейнера меню */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        /* Стили для списка меню */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        /* Стили для пунктов меню */
+        li {
+            margin: 0 15px;
+        }
+        /* Стили для ссылок */
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: block;
+            border-radius: 5px;
+        }
+        /* для активного пункта */
+        a:active {
+            background-color: #f89d13;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

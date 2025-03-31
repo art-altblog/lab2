@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример :focus</title>
+  <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: all 0.5s ease;
+            margin-left: 10px;
+        }
+
+        input:focus {
+            border-color: #af4c9d;
+            background-color: #f8e0f8;
+            outline: none;
+        }
+  </style>
+</head>
+<body>
+
+  <label for="input-field">Введите текст:</label>
+  <input type="text" id="input-field" name="input-field" placeholder="Фокус на поле ввода">
+
+</body>
+</html>
